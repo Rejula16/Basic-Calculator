@@ -1,0 +1,61 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #b8c3d7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+#result {
+    width: calc(96% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: 2px solid #98b1cc;
+    border-radius: 4px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    /* grid-column-gap: 11px; */
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  /*specify cursor type*/
+    background-color: #324e89;
+    color: rgb(180, 185, 192);
+    transition: background-color 0.3s; /* transition effect that specifies how the background color of a button changes over a duration of 0.3 seconds. */
+    text-align-last: right;
+}
+
+/* change the background color of a button when the mouse hovers over it. */
+button:hover {
+    background-color: #092d66;
+}
+
+
+/* When a button is pressed (active), it will scale down to 95% of its original size. This creates an illusion that the button has been pressed. */
+
+button:active {
+    transform: scale(0.95);
+}
+
+
